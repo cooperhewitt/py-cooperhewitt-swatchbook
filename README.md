@@ -123,8 +123,8 @@ Return the hex colours sorted.
 
 The following colour palettes are supported:
 
-* crayola
-* css3
-* css4
-* naturalcolorsystem
+* [crayola](https://github.com/cooperhewitt/py-cooperhewitt-swatchbook/blob/master/cooperhewitt/swatchbook/crayola.py)
+* [css3](https://github.com/cooperhewitt/py-cooperhewitt-swatchbook/blob/master/cooperhewitt/swatchbook/css3.py)
+* [css4](https://github.com/cooperhewitt/py-cooperhewitt-swatchbook/blob/master/cooperhewitt/swatchbook/css4.py)
+* [naturalcolorsystem](https://github.com/cooperhewitt/py-cooperhewitt-swatchbook/blob/master/cooperhewitt/swatchbook/naturalcolorsystem.py)
 
