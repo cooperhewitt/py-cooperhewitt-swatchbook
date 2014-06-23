@@ -54,7 +54,7 @@ class palette:
 
         raise Exception, "Invalid colour name"
 
-    def sort(self):
+    def sorted(self):
 
         colours = self.colours()
         colours = colours.keys()

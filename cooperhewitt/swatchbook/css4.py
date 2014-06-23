@@ -1,6 +1,6 @@
 import palette
 
-class colours(palette.palette):
+class palette(palette.palette):
     
     def __init__(self):
 
