@@ -4,7 +4,7 @@ from distutils.core import setup
 
 setup(name='cooperhewitt-swatchbook',
       version='0.1',
-      description='',
+      description='Cooper Hewitt's Python tools for wrangling colours',
       author='Cooper Hewitt Smithsonian Design Museum',
       url='https://github.com/cooperhewitt/py-cooperhewitt-swatchbook',
       requires=['colorsys', 'webcolors'],
