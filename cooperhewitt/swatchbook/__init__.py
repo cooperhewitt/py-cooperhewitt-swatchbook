@@ -16,8 +16,11 @@ if __name__ == '__main__':
     ref = sys.argv[1]
     hex = sys.argv[2]
     
-    print closest(ref, hex)
+    # print closest(ref, hex)
 
     p = load_palette(ref)
-    print p.sort()
+    # print p.colors()
 
+    print p.sorted()
+
+    print p.closest(hex)
