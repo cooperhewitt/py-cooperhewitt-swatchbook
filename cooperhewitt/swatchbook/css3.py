@@ -1,10 +1,10 @@
-import base
+import palette
 
-class colours(base.base):
+class colours(palette.palette):
     
     def __init__(self):
 
-        self.__source__ = 'css4'
+        self.__source__ = 'css3'
 
         self.__colours__ = {
             "#7cfc00": {
@@ -16,8 +16,8 @@ class colours(base.base):
             "#00008b": {
                 "name": "darkblue"
             }, 
-            "#98fb98": {
-                "name": "palegreen"
+            "#ffe4b5": {
+                "name": "moccasin"
             }, 
             "#fffff0": {
                 "name": "ivory"
@@ -31,8 +31,8 @@ class colours(base.base):
             "#fffaf0": {
                 "name": "floralwhite"
             }, 
-            "#ffffff": {
-                "name": "white"
+            "#8b008b": {
+                "name": "darkmagenta"
             }, 
             "#fff5ee": {
                 "name": "seashell"
@@ -40,14 +40,11 @@ class colours(base.base):
             "#ff8c00": {
                 "name": "darkorange"
             }, 
-            "#ffefd5": {
-                "name": "papayawhip"
-            }, 
             "#5f9ea0": {
                 "name": "cadetblue"
             }, 
             "#2f4f4f": {
-                "name": "darkslategrey"
+                "name": "darkslategray"
             }, 
             "#afeeee": {
                 "name": "paleturquoise"
@@ -85,20 +82,17 @@ class colours(base.base):
             "#40e0d0": {
                 "name": "turquoise"
             }, 
-            "#8b008b": {
-                "name": "darkmagenta"
+            "#ffffff": {
+                "name": "white"
             }, 
             "#00ced1": {
                 "name": "darkturquoise"
             }, 
-            "#00fa9a": {
-                "name": "mediumspringgreen"
+            "#8b0000": {
+                "name": "darkred"
             }, 
             "#ee82ee": {
                 "name": "violet"
-            }, 
-            "#8b0000": {
-                "name": "darkred"
             }, 
             "#adff2f": {
                 "name": "greenyellow"
@@ -121,8 +115,8 @@ class colours(base.base):
             "#00ff7f": {
                 "name": "springgreen"
             }, 
-            "#ff7f50": {
-                "name": "coral"
+            "#ffefd5": {
+                "name": "papayawhip"
             }, 
             "#ffd700": {
                 "name": "gold"
@@ -130,14 +124,8 @@ class colours(base.base):
             "#f5fffa": {
                 "name": "mintcream"
             }, 
-            "#008080": {
-                "name": "teal"
-            }, 
-            "#f0fff0": {
-                "name": "honeydew"
-            }, 
-            "#d2b48c": {
-                "name": "tan"
+            "#dda0dd": {
+                "name": "plum"
             }, 
             "#cd5c5c": {
                 "name": "indianred"
@@ -145,11 +133,11 @@ class colours(base.base):
             "#ffa07a": {
                 "name": "lightsalmon"
             }, 
-            "#bdb76b": {
-                "name": "darkkhaki"
+            "#00fa9a": {
+                "name": "mediumspringgreen"
             }, 
-            "#778899": {
-                "name": "lightslategrey"
+            "#f8f8ff": {
+                "name": "ghostwhite"
             }, 
             "#008000": {
                 "name": "green"
@@ -157,8 +145,8 @@ class colours(base.base):
             "#faebd7": {
                 "name": "antiquewhite"
             }, 
-            "#0000ff": {
-                "name": "blue"
+            "#f0fff0": {
+                "name": "honeydew"
             }, 
             "#c0c0c0": {
                 "name": "silver"
@@ -168,12 +156,6 @@ class colours(base.base):
             }, 
             "#7fff00": {
                 "name": "chartreuse"
-            }, 
-            "#663399": {
-                "name": "rebeccapurple"
-            }, 
-            "#d3d3d3": {
-                "name": "lightgrey"
             }, 
             "#fafad2": {
                 "name": "lightgoldenrodyellow"
@@ -203,7 +185,7 @@ class colours(base.base):
                 "name": "olive"
             }, 
             "#a9a9a9": {
-                "name": "darkgrey"
+                "name": "darkgray"
             }, 
             "#f5f5dc": {
                 "name": "beige"
@@ -227,10 +209,10 @@ class colours(base.base):
                 "name": "saddlebrown"
             }, 
             "#00ffff": {
-                "name": "cyan"
+                "name": "aqua"
             }, 
-            "#9acd32": {
-                "name": "yellowgreen"
+            "#4b0082": {
+                "name": "indigo"
             }, 
             "#66cdaa": {
                 "name": "mediumaquamarine"
@@ -238,20 +220,23 @@ class colours(base.base):
             "#b22222": {
                 "name": "firebrick"
             }, 
-            "#dda0dd": {
-                "name": "plum"
+            "#d2b48c": {
+                "name": "tan"
             }, 
             "#ffebcd": {
                 "name": "blanchedalmond"
             }, 
-            "#008b8b": {
-                "name": "darkcyan"
+            "#0000ff": {
+                "name": "blue"
             }, 
             "#da70d6": {
                 "name": "orchid"
             }, 
             "#fffacd": {
                 "name": "lemonchiffon"
+            }, 
+            "#ff7f50": {
+                "name": "coral"
             }, 
             "#f5f5f5": {
                 "name": "whitesmoke"
@@ -284,7 +269,7 @@ class colours(base.base):
                 "name": "salmon"
             }, 
             "#708090": {
-                "name": "slategrey"
+                "name": "slategray"
             }, 
             "#ff1493": {
                 "name": "deeppink"
@@ -297,6 +282,9 @@ class colours(base.base):
             }, 
             "#e9967a": {
                 "name": "darksalmon"
+            }, 
+            "#778899": {
+                "name": "lightslategrey"
             }, 
             "#ba55d3": {
                 "name": "mediumorchid"
@@ -316,11 +304,20 @@ class colours(base.base):
             "#dc143c": {
                 "name": "crimson"
             }, 
+            "#bdb76b": {
+                "name": "darkkhaki"
+            }, 
             "#ffff00": {
                 "name": "yellow"
             }, 
+            "#d87093": {
+                "name": "palevioletred"
+            }, 
             "#556b2f": {
                 "name": "darkolivegreen"
+            }, 
+            "#9370d8": {
+                "name": "mediumpurple"
             }, 
             "#eee8aa": {
                 "name": "palegoldenrod"
@@ -337,11 +334,11 @@ class colours(base.base):
             "#d2691e": {
                 "name": "chocolate"
             }, 
-            "#f8f8ff": {
-                "name": "ghostwhite"
+            "#008080": {
+                "name": "teal"
             }, 
-            "#ffe4b5": {
-                "name": "moccasin"
+            "#98fb98": {
+                "name": "palegreen"
             }, 
             "#ff69b4": {
                 "name": "hotpink"
@@ -367,8 +364,8 @@ class colours(base.base):
             "#800080": {
                 "name": "purple"
             }, 
-            "#9370db": {
-                "name": "mediumpurple"
+            "#d3d3d3": {
+                "name": "lightgray"
             }, 
             "#006400": {
                 "name": "darkgreen"
@@ -385,8 +382,11 @@ class colours(base.base):
             "#48d1cc": {
                 "name": "mediumturquoise"
             }, 
-            "#4b0082": {
-                "name": "indigo"
+            "#008b8b": {
+                "name": "darkcyan"
+            }, 
+            "#9acd32": {
+                "name": "yellowgreen"
             }, 
             "#f08080": {
                 "name": "lightcoral"
@@ -396,9 +396,6 @@ class colours(base.base):
             }, 
             "#bc8f8f": {
                 "name": "rosybrown"
-            }, 
-            "#db7093": {
-                "name": "palevioletred"
             }, 
             "#ffb6c1": {
                 "name": "lightpink"
@@ -430,6 +427,10 @@ if __name__ == '__main__':
 
     c = colours()
 
+    print c
+
     print c.source()
     print c.hex('gainsboro')
     print c.name('#ff0000')
+
+    print c.as_json()
