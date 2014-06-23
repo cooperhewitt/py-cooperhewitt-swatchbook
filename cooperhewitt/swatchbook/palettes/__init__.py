@@ -1,5 +1,7 @@
 def palettes():
 
+    # Generate this dynamically by reading dir?
+
     return [
         'css3',
         'css4'
@@ -7,19 +9,12 @@ def palettes():
 
 def load_palette(reference):
 
-    if not reference in palettes():
-        raise Exception, "Invalid palette"
+    palette = __import__(reference)
+    return palette.colours()
 
-    # Please figure out the hoo-hah to make dynamic
-    # loading work (20140623/straup)
-
-    if reference == 'css3':
-        import css3
-        return css3.colours()
-    
 if __name__ == '__main__':
 
-    p = load_palette('css5')
+    p = load_palette('css4')
     print p
     
     
