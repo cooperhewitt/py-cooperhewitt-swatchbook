@@ -49,6 +49,10 @@ Assuming:
 	# Would print
 	# {'#009f6b': {'name': 'green'}, '#c40233': {'name': 'red'}, '#000000': {'name': 'black'}, '#0087bd': {'name': 'blue'}, '#ffd300': {'name': 'yellow'}, '#ffffff': {'name': 'white'}}
 
+#### palette.colors()
+
+Just a helper wrapper around `palette.colours()` for Americans
+
 #### palette.hex(<NAME>)
 
 	print palette.hex('red')
