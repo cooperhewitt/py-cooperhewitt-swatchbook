@@ -53,14 +53,14 @@ Assuming:
 
 Just a helper wrapper around `palette.colours()` for Americans
 
-#### palette.hex(<NAME>)
+#### palette.hex(NAME)
 
 	print palette.hex('red')
 
 	# Would print:
 	# #c40233
 
-#### palette.name(<HEX>)
+#### palette.name(HEX)
 
 	print palette.name('#ffd300')
 
@@ -76,7 +76,7 @@ Return colours and source as a Python dict object.
 	# Would print:
 	# {'colours': {'#009f6b': {'name': 'green'}, '#c40233': {'name': 'red'}, '#000000': {'name': 'black'}, '#0087bd': {'name': 'blue'}, '#ffd300': {'name': 'yellow'}, '#ffffff': {'name': 'white'}}, 'source': 'naturalcolorsystem'}
 
-#### palette.as_json(<KWARGS>)
+#### palette.as_json(KWARGS)
 
 Return the results of `palette.as_dict` serialized as JSON.
 
@@ -116,7 +116,7 @@ Return the hex colours sorted.
 	# Would print:
 	# ['#ffd300', '#009f6b', '#0087bd', '#c40233', '#000000', '#ffffff']
 
-#### palette.closest(<HEX>)
+#### palette.closest(HEX)
 
 	print palette.closest('#7c5d5c')
 
