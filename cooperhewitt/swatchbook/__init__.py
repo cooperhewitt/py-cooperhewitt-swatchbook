@@ -1,14 +1,5 @@
 import importlib
 
-def palettes():
-
-    # Generate this dynamically by reading dir?
-
-    return [
-        'css3',
-        'css4'
-    ]
-
 def load_palette(reference):
     pkg = "cooperhewitt.swatchbook.%s" % reference
     mod = importlib.import_module(pkg)

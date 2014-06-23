@@ -45,11 +45,9 @@ class palette:
 
     def hex(self, name):
 
-        name = name.lower()
-
         for hex, details in self.__colours__.items():
             
-            if details.get('name', None) == name:
+            if details['name'].lower() == name.lower():
                 return hex
 
         raise Exception, "Invalid colour name"
