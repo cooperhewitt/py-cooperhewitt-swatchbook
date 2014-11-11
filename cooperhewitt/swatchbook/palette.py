@@ -1,6 +1,7 @@
 import json
 import webcolors
 import colorsys
+from colormath.color_objects import RGBColor
 
 class palette:
 
@@ -99,5 +100,31 @@ class palette:
         details = min_colours[idx]
         name = details['name']
 
+        hex = self.hex(name)
+        return hex, name
+
+    def closest_delta_e(self, hex):
+        """
+        Calculates the Delta E difference between a hex value and others in
+        the specified palette and returns the closest match (CMC method)
+        http://en.wikipedia.org/wiki/Color_difference#CMC_l:c_.281984.29
+        """
+        incumbent = RGBColor(*webcolors.hex_to_rgb(hex))
+
+        shortest_dist = None
+        nearest_colour = None
+        for key, details in self.colours().items():
+
+            candidate = RGBColor(*webcolors.hex_to_rgb(key))
+            cdist = incumbent.delta_e(candidate, method="cmc")
+            if nearest_colour is None:
+                nearest_colour = (candidate, key, details)
+                shortest_dist = cdist
+            elif cdist < shortest_dist:
+                shortest_dist = cdist
+                nearest_colour = (candidate, key, details)
+
+        details = nearest_colour[2]
+        name = details['name']
         hex = self.hex(name)
         return hex, name

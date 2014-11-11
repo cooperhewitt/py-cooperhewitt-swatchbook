@@ -9,6 +9,11 @@ def closest(reference, hex):
     palette = load_palette(reference)
     return palette.closest(hex)
 
+def closest_cmc(reference, hex):
+    palette = load_palette(reference)
+    return palette.closest_cmc(hex)
+
+
 if __name__ == '__main__':
 
     import sys
@@ -24,3 +29,4 @@ if __name__ == '__main__':
     print p.sorted()
 
     print p.closest(hex)
+    print p.closest_delta_e(hex)

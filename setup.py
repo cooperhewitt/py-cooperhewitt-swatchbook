@@ -7,7 +7,7 @@ setup(name='cooperhewitt-swatchbook',
       description='Cooper Hewitt\'s Python tools for wrangling colours',
       author='Cooper Hewitt Smithsonian Design Museum',
       url='https://github.com/cooperhewitt/py-cooperhewitt-swatchbook',
-      requires=['colorsys', 'webcolors'],
+      requires=['colorsys', 'webcolors', 'colormath (<2.0)'],
       packages=[
           'cooperhewitt',
           'cooperhewitt.swatchbook'
