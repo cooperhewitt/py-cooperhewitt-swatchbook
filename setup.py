@@ -3,7 +3,7 @@
 from setuptools import setup, find_packages
 
 packages = find_packages()
-desc = open("README.md").read(),
+desc = open("README.md").read()
 
 setup(name='cooperhewitt-swatchbook',
       version='0.3',
