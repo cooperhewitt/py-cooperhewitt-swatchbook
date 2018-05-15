@@ -40,18 +40,18 @@ class palette:
         details = self.__colours__.get(hex, None)
 
         if not details:
-            raise Exception, "Invalid hex colour"
+            raise Exception("Invalid hex colour")
 
         return details['name']
 
     def hex(self, name):
 
         for hex, details in self.__colours__.items():
-            
+
             if details['name'].lower() == name.lower():
                 return hex
 
-        raise Exception, "Invalid colour name"
+        raise Exception("Invalid colour name")
 
     def sorted(self):
 

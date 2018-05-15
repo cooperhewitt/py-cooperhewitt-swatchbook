@@ -1,9 +1,10 @@
-import palette
+from .palette import palette
+
 
 # https://en.wikipedia.org/wiki/Natural_Color_System
 
-class palette(palette.palette):
-    
+class palette(palette):
+
     def __init__(self):
 
         self.__source__ = 'naturalcolorsystem'
